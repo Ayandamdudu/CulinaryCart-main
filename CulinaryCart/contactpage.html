@@ -7,6 +7,7 @@
     <title>Contact Us - CulinaryCart</title>
     <link rel="stylesheet" href="styles_contactpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script defer src="contact.js"></script>
 </head>
 
 <body>
@@ -27,20 +28,20 @@
         <section class="contact">
             
             <h2>Contact Us </h2>
-
-            <form action="submit_form.php" method="post">
+             <div id="érror"></div>
+            <form action="submit_form.php" method="post" id="form">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="Name" name="Name" required><br><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
                 <label for="Inquiry">Inquiry:</label>
                 <select id="Inquiry" name="Inquiry">
-                  <option value="general Inquiry">General Inquiry</option>
+                  <option value="general Inquiry" >General Inquiry</option>
                   <option value="Delivary Inquiry">Delivary Inquiry</option>
                   <option value="Kit Inquiry">Kit Inquiry</option>
                 </select><br>
                 <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <textarea id="message" name="message" rows="4" ></textarea><br><br>
     
                 <input type="submit" value="Submit" class="button">
             </form>
