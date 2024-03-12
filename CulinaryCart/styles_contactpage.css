@@ -70,7 +70,7 @@ padding-bottom: 80px;
 
 .contact {
     margin: auto;
-    background-color:#B9B7BD;
+    background-color:#F3F0E9;
     max-width: 450px;
     max-height: 400px;
     padding: 14px;
@@ -80,11 +80,28 @@ padding-bottom: 80px;
 
 
 }
-
+input{
+    background: transparent;
+    
+}
+textarea{
+    background: transparent;
+}
+.button{
+    width: 20%;
+    display: flex;
+    flex-basis: 48%;
+    background: #B1D8B7;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
 .button:hover {
     background: #189AB4;
 
 }
+
 
 
 .contact-information-container {
