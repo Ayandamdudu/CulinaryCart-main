@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - CulinaryCart</title>
-    <link rel="stylesheet" href="styles_contactpage.css">
+    <meta charset="utf-8">
+    <title>CulinaryCart</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script defer src="contact.js"></script>
+    <link href="styles_contactpage.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,61 +25,102 @@
             </ul>
         </nav>
     </header>
-    <div class="page-content">
-        <section class="contact">
-            
-            <h2>Contact Us </h2>
-             <div id="érror"></div>
-            <form action="submit_form.php" method="post" id="form">
-                <label for="name">Name:</label>
-                <input type="text" id="Name" name="Name" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="Inquiry">Inquiry:</label>
-                <select id="Inquiry" name="Inquiry">
-                  <option value="general Inquiry" >General Inquiry</option>
-                  <option value="Delivary Inquiry">Delivary Inquiry</option>
-                  <option value="Kit Inquiry">Kit Inquiry</option>
-                </select><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" ></textarea><br><br>
-    
-                <input type="submit" value="Submit" class="button">
-            </form>
-        </section>
+    <!-- Navbar End -->
 
-        <div class="contact-information-container">
-            <p class="pin">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.301561875189!2d18.45808437579908!3d-33.93337117320199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5db42c93a685%3A0xec815c21c6eaef71!2sCapaCiTi%20Tech%20Career%20Accelerator!5e0!3m2!1sen!2sza!4v1708500089878!5m2!1sen!2sza"
-                    width="1000" height="1000" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </p>
-            <div class="connect-information">
-                <div class="connect" >
-                    <h3 > Connect with us</h3><br>
-                    <p >
-                        97 Durham Ave, Salt River, Cape Town, 7925<br>
-                        0218705454<br>
-                        culinary@cart.org.za
-                    </p>
-                </div>
 
-    
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h3>
+            <p>Whether you're curious about a specific meal, need help with a project, or just want to learn something
+                new, we are here to provide you with an easy yummy solution.</p>
+
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <section class="how-it-works">
+        <h2>Get In Touch</h2>
+        <div class="steps">
+            <div class="step">
+                <i class="fa fa-map-pin fa-2x"></i>
+                <h3>Address</h3>
+                <p>97 Durham Ave, Salt River Cape Town</p>
+            </div>
+            <div class="step">
+                <i class="fa fa-phone fa-2x"></i>
+                <h3>Contact</h3>
+                <p>+27 870 5790<br>
+                   +27 870 5770
+                </p>
+            </div>
+            <div class="step">
+                <i class="fa fa-envelope fa-2x"></i>
+                <h3>E-mail</h3>
+                <p>culinary@cart.org</p>
             </div>
         </div>
+    </section>
 
-    </div>
 
-    <footer>
+    <!-- Contact Start -->
+    <div class="container-fluid contact py-5">
+        <div class="container py-5">
+            <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s"> </div>
+            <div>
+                <div class="form" >
+                    <div class="form-form">
+                        <div class="page fadeInUp">
+                            <form action="submit_form.php" method="post" class="page_">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required><br><br>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+                                <label for="Issue">Topic</label>
+                                <select id="Issue" name="issue">
+                                    <option value="Issue"> Select Issue</option>
+                                    <option value="About CulinaryCart">About CulinaryCart</option>
+                                    <option value="Account Issue">Account Issue</option>
+                                    <option value="Delivery Issue">Delivery Issue</option>
+                                    <option value="Feedback">Feedback</option>
+                                    <option value="Order Issue">Order Issue</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="message">Message:</label><br>
+                                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                                <input type="submit" value="Submit" class="button">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
         <footer>
             <p>&copy; 2024 CulinaryCart. All rights reserved.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=61556419917501" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61556419917501" class="social-icon"><i
+                        class="fab fa-facebook-f"></i></a>
                 <a href="https://twitter.com/CulinaryCartZA" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/culinarycart_/?next=%2F&hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/culinarycart_/?next=%2F&hl=en" class="social-icon"><i
+                        class="fab fa-instagram"></i></a>
             </div>
         </footer>
+
 </body>
 
 </html>
